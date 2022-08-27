@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Ocean</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/28575cf790.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <div class="right">
+            <div class="btn dayNightBtn">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+            </div>
+            <div class="btn menuToggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <video src="video.mp4" autoplay loop muted type="mp4"></video>
+        <img src="mask.jpg" class="mask">
+        <h2>Ocean</h2>
+        <p class="copyrightText">Made by &copy; Meet Bhimani</p>
+        <ul class="socialIcon">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </section>
+    <ul class="navigation">
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Follow</a></li>
+    </ul>
+
+
+
+    <script>
+        let dayNightBtn = document.querySelector('.dayNightBtn');
+        let menuToggle = document.querySelector('.menuToggle');
+        let navigation = document.querySelector('.navigation');
+        let body = document.querySelector('body');
+        dayNightBtn.onclick = function(){
+            dayNightBtn.classList.toggle('active')
+            body.classList.toggle('dark')
+        }
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
